@@ -55,6 +55,11 @@ public class Interfaz extends javax.swing.JFrame {
         });
 
         btnBorrar.setText("Borrar");
+        btnBorrar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnBorrarActionPerformed(evt);
+            }
+        });
 
         jLabel2.setText("(Circulo, rectangulo, cuadrado, triangulo rectangulo, rombo, trapecio)");
 
@@ -155,6 +160,12 @@ public class Interfaz extends javax.swing.JFrame {
 
         }
     }//GEN-LAST:event_btnCalcularActionPerformed
+
+    private void btnBorrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBorrarActionPerformed
+        
+        txtFigura.setText("");
+
+    }//GEN-LAST:event_btnBorrarActionPerformed
 
     /**
      * @param args the command line arguments
