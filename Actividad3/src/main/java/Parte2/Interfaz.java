@@ -154,8 +154,8 @@ public class Interfaz extends javax.swing.JFrame {
                 int lado1T = Integer.parseInt(JOptionPane.showInputDialog("Ingrese el lado 1 del trapecio: "));
                 int lado2T = Integer.parseInt(JOptionPane.showInputDialog("Ingrese el lado 2 del trapecio: "));
                 Trapecio figura6 = new Trapecio(base1T, base2T, alturaT, lado1T, lado2T);
-                JOptionPane.showMessageDialog(null, "El área del trapecio rectangulo es = " + figura6.calcularArea());
-                JOptionPane.showMessageDialog(null, "El perímetro del trapecio rectangulo es = " + figura6.calcularPerimetro());
+                JOptionPane.showMessageDialog(null, "El área del trapecio es = " + figura6.calcularArea());
+                JOptionPane.showMessageDialog(null, "El perímetro del trapecio es = " + figura6.calcularPerimetro());
                 break;
 
         }

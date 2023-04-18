@@ -111,12 +111,9 @@ public class Interfaz extends javax.swing.JFrame {
 
     private void btnCalcularActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCalcularActionPerformed
         int salario = Integer.parseInt(txtHoras.getText())*Integer.parseInt(txtSalario.getText());
-        if(salario > 450000){
-            JOptionPane.showMessageDialog(null, txtNombre.getText()+" su salario es: "+salario);
-        }else{
-            JOptionPane.showMessageDialog(null, "Su nombre es: "+txtNombre.getText());
-        }
-
+        String Nombre = txtNombre.getText();
+        CalculoSalario salary = new CalculoSalario(salario,Nombre);
+        salary.Calculo();
     }//GEN-LAST:event_btnCalcularActionPerformed
 
     private void btnBorrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBorrarActionPerformed
